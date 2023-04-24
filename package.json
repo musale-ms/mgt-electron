@@ -1,0 +1,24 @@
+{
+  "name": "mgt-electron",
+  "productName": "MGT ELectron",
+  "version": "1.0.0",
+  "description": "MGT Electron sample application.",
+  "main": "index.js",
+  "repository": "https://github.com/musale-at-ms/mgt-electron",
+  "author": "Martin Musale",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && electron ./dist/main.js"
+  },
+  "devDependencies": {
+    "electron": "^24.1.2",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@microsoft/mgt-components": "^2.10.0",
+    "@microsoft/mgt-electron-provider": "^2.10.0",
+    "@microsoft/mgt-element": "^2.10.0"
+  }
+}
